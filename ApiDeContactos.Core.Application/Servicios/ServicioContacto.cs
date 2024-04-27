@@ -6,6 +6,7 @@ using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,15 @@ namespace ApiDeContactos.Core.Application.Servicios
         {
             _repository = repositorioContacto;
             _mapper = mapper;
+        }
+
+        public async Task<bool> ConfirmarContacto(string nombre)
+        {
+            var contactos = await _repository.GetAllAsync();
+
+            var confirmar = contactos.FirstOrDefault(c => c.Nombre == nombre);
+            
+            if (confirmar != null) { return true; } else return false;
         }
     }
 }

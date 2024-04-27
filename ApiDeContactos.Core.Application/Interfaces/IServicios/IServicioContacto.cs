@@ -10,5 +10,6 @@ namespace ApiDeContactos.Core.Application.Interfaces.IServicios
 {
     public interface IServicioContacto : IGenericService<ContactoDTO, SaveContactoDTO, Contacto>
     {
+        Task<bool> ConfirmarContacto(string nombre);
     }
 }

@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ApiDeContactos.Core.Application.DTOS.ContactoDTO
 {
     public class SaveContactoDTO
     {
+        [JsonIgnore]
+        public int Id { get; set; }
         [Required(ErrorMessage = "El Nombre del Contacto es Requerido")]
         [DataType(DataType.Text)]
         public string Nombre { get; set; }
+        [Required(ErrorMessage = "El Apellido del Contacto es Requerido")]
+        [DataType(DataType.Text)]
+        public string Apellido { get; set; }
         [Required(ErrorMessage = "El Telefono del Contacto es Requerido")]
         [DataType(DataType.PhoneNumber)]
         public string Telefono { get; set; }
