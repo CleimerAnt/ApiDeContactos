@@ -20,6 +20,16 @@ builder.Services.AddDistributedMemoryCache();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("politica", app =>
+    {
+        app.AllowAnyOrigin()
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,11 +45,13 @@ else
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseCors("politica");
 app.UseAuthentication();
 app.UseAuthorization();
 app.UserSwaggerExtension();
 app.UseHealthChecks("/health");
 app.UseSession();
+
 
 app.MapControllers();
 

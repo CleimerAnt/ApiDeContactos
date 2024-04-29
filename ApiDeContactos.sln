@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDeContactos", "ApiDeContactos\ApiDeContactos.csproj", "{C55DD26A-2DC7-4EED-924E-95D395172890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDeContactos", "ApiDeContactos\ApiDeContactos.csproj", "{C55DD26A-2DC7-4EED-924E-95D395172890}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{37415921-E83B-4709-BADE-386A2D3B4E8A}"
 EndProject
@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{46941DD1-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{A322A3C6-9D35-4D1D-97E5-A4636C86A5B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDeContactos.Core.Application", "ApiDeContactos.Core.Application\ApiDeContactos.Core.Application.csproj", "{A1351254-10A8-4883-BD40-B237D9565FC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDeContactos.Core.Application", "ApiDeContactos.Core.Application\ApiDeContactos.Core.Application.csproj", "{A1351254-10A8-4883-BD40-B237D9565FC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDeContactos.Core.Domain", "ApiDeContactos.Core.Domain\ApiDeContactos.Core.Domain.csproj", "{7E87B0FB-4680-431E-A2A6-2150E454FA09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDeContactos.Core.Domain", "ApiDeContactos.Core.Domain\ApiDeContactos.Core.Domain.csproj", "{7E87B0FB-4680-431E-A2A6-2150E454FA09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDeContactos.Infraestructure.Persistence", "ApiDeContactos.Infraestructure.Persistence\ApiDeContactos.Infraestructure.Persistence.csproj", "{2BD90DF6-8A85-4100-AA5D-BB86745F2F88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDeContactos.Infraestructure.Persistence", "ApiDeContactos.Infraestructure.Persistence\ApiDeContactos.Infraestructure.Persistence.csproj", "{2BD90DF6-8A85-4100-AA5D-BB86745F2F88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
